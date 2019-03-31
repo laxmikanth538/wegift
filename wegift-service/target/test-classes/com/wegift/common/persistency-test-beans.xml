@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="datasource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/wegift" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+	<bean id="sessionFactoryBean"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="datasource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.wegift.entities.AddressTest</value>
+				<value>com.wegift.entities.CardTest</value>
+				<value>com.wegift.entities.MemberTest</value>
+				<value>com.wegift.entities.MerchantEnquiryEntityTest</value>
+				<value>com.wegift.entities.MerchantTermsAndAgreementTest</value>
+				<value>com.wegift.entities.MerchantTest</value>
+				<value>com.wegift.entities.OnlineUserTest</value>
+				<value>com.wegift.entities.StatesTest</value>
+				<value>com.wegift.entities.UserRoleTest</value>
+			</list>
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactoryBean" />
+	</bean>
+
+
+</beans>

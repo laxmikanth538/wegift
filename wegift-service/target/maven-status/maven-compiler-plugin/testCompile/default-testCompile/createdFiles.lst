@@ -1,0 +1,13 @@
+com\wegift\entities\AddressTest.class
+com\wegift\entities\CitiesTest.class
+com\wegift\validation\WeGiftPerfectValidatorTest.class
+com\wegift\entities\StatesTest.class
+com\wegift\entities\MerchantTermsAndAgreementTest.class
+com\wegift\dao\MerchantDaoTest.class
+com\wegift\entities\MerchantEnquiryEntityTest.class
+com\wegift\dao\MerchantHibernateDaoTest.class
+com\wegift\entities\CardTest.class
+com\wegift\entities\OnlineUserTest.class
+com\wegift\entities\UserRoleTest.class
+com\wegift\entities\MerchantTest.class
+com\wegift\entities\MemberTest.class
