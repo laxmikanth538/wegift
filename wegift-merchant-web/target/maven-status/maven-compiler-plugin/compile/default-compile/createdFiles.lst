@@ -1,0 +1,7 @@
+com\wegift\merchant\bo\MerchantEnquiryBo.class
+com\wegift\merchant\enquiry\config\RootConfig.class
+com\wegift\merchant\enquiry\form\MerchantEnquiryForm.class
+com\wegift\merchant\enquiry\initializer\MerchantEnquiryInitializer.class
+com\wegift\merchant\enquiry\validator\MerchantEnquiryFormValidator.class
+com\wegift\merchant\service\MerchantManagementService.class
+com\wegift\merchant\enquiry\config\WebConfig.class

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <!DOCTYPE tiles-definitions SYSTEM "DTD/tiles-config_2_0.dtd"> -->
+       <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="basename" template="/WEB-INF/common/layout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/common/menu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="merchant-enquiry" extends="basename">
+		<put-attribute name="title" value="Merchant Enquiry" />
+		<put-attribute name="body" value="/WEB-INF/jsp/merchant-enquiry.jsp" />
+	</definition>
+
+	<definition name="add-merchant-location" extends="basename">
+		<put-attribute name="title" value="Add merchant location" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/add-merchant-location.jsp" />
+	</definition>
+
+
+	<definition name="enquiry-success" extends="basename">
+		<put-attribute name="title" value="Enquiry-success" />
+		<put-attribute name="body" value="/WEB-INF/jsp/enquiry-success.jsp" />
+	</definition>
+
+	<definition name="loginBasename" template="/WEB-INF/common/loginLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="simpleloginBasename" template="/WEB-INF/common/simpleloginlayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<!-- <put-attribute name="header" value="/WEB-INF/common/header.jsp"></put-attribute> -->
+		<put-attribute name="body" value=""></put-attribute>
+		<!-- <put-attribute name="footer" value="/WEB-INF/common/footer.jsp"></put-attribute> -->
+	</definition>
+
+	<definition name="login" extends="simpleloginBasename">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+
+	<definition name="Merchanthome" extends="basename">
+		<put-attribute name="title" value="HOME" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Merchanthome.jsp" />
+	</definition>
+
+	<definition name="logout" extends="basename">
+		<put-attribute name="title" value="logout" />
+		<put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+	</definition>
+
+</tiles-definitions>
