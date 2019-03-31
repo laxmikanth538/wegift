@@ -1,0 +1,5 @@
+com\wegift\command\MerchantCommand.class
+com\wegift\merchant\registration\controller\MerchantRegistrationController.class
+com\wegift\admin\initializer\WegiftAdminInitializer.class
+com\wegift\support\config\RootConfig.class
+com\wegift\support\config\ServletConfig.class

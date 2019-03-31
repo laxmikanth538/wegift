@@ -1,0 +1,188 @@
+@CHARSET "ISO-8859-1";
+
+.text_input, .password_input, .number, .date {
+	width: 100%;
+	height: 15px;
+	padding: 5px;
+	margin-bottom: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	color: #4f4f4f;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #ccc;
+}
+
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+
+::-moz-placeholder {
+	color: #ccc;
+}
+
+:-ms-input-placeholder {
+	color: #ccc;
+}
+
+:-moz-placeholder {
+	color: #ccc;
+}
+
+.file {
+	width: 100%;
+	height: 25px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.btn_input {
+	font-size: 16px;
+	background: #ccc;
+	border: 1px solid #e5a900;
+	color: #4E4D4B;
+	font-weight: bold;
+	cursor: pointer;
+	width: 50%;
+	border-radius: 50px;
+	padding: 10px 0;
+	outline: none;
+	margin-top: 20px;
+}
+
+.select {
+	width: 100%;
+	height: 25px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 8px;
+	margin-top: 5px;
+}
+
+.reg-font {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.button {
+	border: 1px solid #e5a900;
+	color: #4E4D4B;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100px;
+	border-radius: 50px;
+	padding: 10px 0;
+	outline: none;
+}
+
+.li-left {
+	margin-left: 300px;
+}
+
+.title {
+	float: left;
+	font-family: eras bold itc;
+	color: lightblue;
+}
+
+.textarea {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	padding: 2px;
+	border: 3px solid #ccc;
+	margin-bottom: 8px;
+	margin-top: 5px;
+}
+
+font {
+	face: verdana;
+}
+
+li {
+	float: left;
+	border-radius: 50px;
+	margin: 0 0 10px 0;
+	padding: 0px 5px;
+}
+
+.heading {
+	font-family: consolas;
+	color: #0442a5;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px 100px;
+	left: 10;
+	padding: 0;
+	overflow: auto;
+	background-color: none;
+}
+
+li.dropdown, .dropbtn {
+	display: block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: red;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: lightgreen
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+li a {
+	display: block;
+	color: darkblue;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.errors {
+	color: red;
+	left: 50px;
+	position: relative;
+	font-family: Goudy Old Style;
+}
+
+li a:hover {
+	background-color: #ccc;
+	color: yellow;
+}
+
+li button:hover {
+	background-color: #ccc;
+	color: yellow;
+}
+
+li a.active {
+	background-color: green;
+	color: white;
+}
+
+.table {
+	table-border: "3";
+}

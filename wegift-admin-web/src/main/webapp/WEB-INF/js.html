@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	FirstName :
+	<input type="text" name="firstName" id="firstName" />
+	<p style="color: red" id="firstName_error"></p>
+	<br /> LastName :
+	<input type="text" name="lastName" id="lastName" />
+	<p style="color: red" id="lastName_error"></p>
+	<br /> Email :
+	<input type="text" name="email" id="email" />
+	<p style="color: red" id="email_error"></p>
+	Gender :
+	<input type="radio" value="M" name="gender" id="mgender">Male
+	or
+	<input type="radio" value="F" name="gender" id="fgender">Female
+	<p style="color: red" id="gender_error"></p>
+	<br />
+	<input type="submit" value="check" onclick="validate();">
+
+	<script type="text/javascript">
+		function validate() {
+			var inputFeilds = document.querySelectorAll("input[type='text']");
+
+			var errors = document.querySelectorAll("p");
+			for(var i=0;i<errors.length;i++){
+				if(errors[i].value != ""){
+					document.getElementById(errors[i].id).innerHTML = "";
+				}
+				
+			}
+			
+			
+			for(var i=0;i<inputFeilds.length;i++){
+				//alert(inputFeilds[i].value);
+				if(inputFeilds[i].value == ""){
+					//alert("please enter " +inputFeilds[i].name);
+					document.getElementById(inputFeilds[i].name +"_error").innerHTML = "please enter "+inputFeilds[i].name;
+					
+				}
+
+				if(inputFeilds[i].name == "email"){
+					var emailId = inputFeilds[i].value;
+					if(emailId == ""){
+						document.getElementById(inputFeilds[i].name + "_error").innerHTML = "please provide your email address";
+						}else
+					if(emailId.split("@")[0].length < 5){
+						//alert("email id is minimum of 5 chars");
+							document.getElementById(inputFeilds[i].name + "_error").innerHTML = "email id is minimum of 5 chars";
+					}else
+						if(emailId.endsWith("@gmail.com") == false){
+							//alert("email must ends with @gmail.com");
+							document.getElementById("email_error").innerHTML = "email id must ends with @gmail.com";
+							//return false;
+						}
+				}
+				
+			}
+
+			var radioFeilds = document.getElementsByName("gender");
+
+			for(var i=0;i<radioFeilds.length;i++){
+					if(radioFeilds[i].checked == true){
+						break;
+					}else{
+							//alert("please select the gender");
+							document.getElementById(radioFeilds[i].name + "_error").innerHTML = "please select the gender";
+							break;
+						}
+				}
+
+			
+		}
+	</script>
+</body>
+</html>
