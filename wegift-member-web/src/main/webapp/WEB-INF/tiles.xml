@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <!DOCTYPE tiles-definitions SYSTEM "DTD/tiles-config_2_0.dtd"> -->
+       <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+	<definition name="basename" template="/WEB-INF/common/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp" />
+	</definition>
+
+	<definition name="loginBase" template="/WEB-INF/common/loginLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/common/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="basename">
+		<put-attribute name="title" value="Home page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+
+	<definition name="member-reg" extends="loginBase">
+		<put-attribute name="title" value="Member Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/member-reg.jsp" />
+	</definition>
+
+	<definition name="login" extends="loginBase">
+		<put-attribute name="title" value="Secure Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+
+	<definition name="member-reg-success" extends="basename">
+		<put-attribute name="title" value="Registration Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/member-reg-success.jsp" />
+	</definition>
+
+	<definition name="activate-member" extends="basename">
+		<put-attribute name="title" value="Activation Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/activate-member.jsp" />
+	</definition>
+
+	<definition name="member-activation-success" extends="loginBase">
+		<put-attribute name="title" value="Activation Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/member-activation-success.jsp" />
+	</definition>
+
+	<definition name="wrong-url-error-page" extends="basename">
+		<put-attribute name="title" value="Error url" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/wrong-url-error-page.jsp" />
+	</definition>
+
+	<definition name="expiry-link" extends="basename">
+		<put-attribute name="title" value="Already Activated" />
+		<put-attribute name="body" value="/WEB-INF/jsp/expiry-link.jsp" />
+	</definition>
+
+	<definition name="contact-us" extends="basename">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body" value="/WEB-INF/jsp/contact-us.jsp" />
+	</definition>
+</tiles-definitions>
