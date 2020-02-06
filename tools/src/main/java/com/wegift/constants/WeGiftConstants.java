@@ -4,13 +4,13 @@ public class WeGiftConstants {
 	/**
 	 * WEGIFT System Constants
 	 */
-	public static final String WEGIFT_JNDI_NAME = "java:/jboss.exported/wegiftDS";
+	public static final String WEGIFT_JNDI_NAME = "java:jboss/datasources/oracleDS";
 
-	public static final String GMAIL_USERNAME = "luckyfortech@gmail.com";
-	public static final String GMAIL_PASSWORD = "Lucky.ch530";
+	public static final String GMAIL_USERNAME = "";
+	public static final String GMAIL_PASSWORD = "";
 
-	public static final String SFORCE_USERNAME = "laxmikanth.gnani@s-force.org";
-	public static final String SFORCE_PASSWORD = "lucky.ch@536";
+	public static final String SFORCE_USERNAME = "";
+	public static final String SFORCE_PASSWORD = "";
 
 	public static String WEGIFT_SERVER_HOST = "localhost";
 	public static int WEGIFT_SERVER_PORT = 8082;
