@@ -54,13 +54,13 @@ public class PersistencyConfig {
 
 		hibernateProperties.setProperty("show_sql", "true");
 		hibernateProperties.setProperty("hibernate.current_session_context_class", "thread");
-		hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-		hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
+		hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.Oracle12CDialect");
+		hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create");
 
 		sessionFactory.setHibernateProperties(hibernateProperties);
 		sessionFactory.setAnnotatedClasses(
-				new Class<?>[] { Address.class, Merchant.class, MerchantTermsAndAgreement.class, OnlineUser.class,
-						UserRole.class, MerchantEnquiryEntity.class, Member.class, Card.class, RegUnique.class });
+				Address.class, Merchant.class, MerchantTermsAndAgreement.class, OnlineUser.class,
+						UserRole.class, MerchantEnquiryEntity.class, Member.class, Card.class, RegUnique.class );
 
 		return sessionFactory;
 
