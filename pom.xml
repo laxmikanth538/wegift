@@ -181,7 +181,7 @@
 		<jdk.version.source>1.8</jdk.version.source>
 		<jdk.version.target>1.8</jdk.version.target>
 		<spring.version>5.2.3.RELEASE</spring.version>
-		<spring.security.version>5.2.2.RELEASE</spring.security.version>
+		<spring.security.version>5.3.3.RELEASE</spring.security.version>
 		<hibernate.version>5.2.10.Final</hibernate.version>
 		<maven.compiler.version>3.6.1</maven.compiler.version>
 		<apachetiles.version>3.0.7</apachetiles.version>
